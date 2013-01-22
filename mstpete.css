@@ -1,0 +1,71 @@
+@charset "utf-8";
+/* CSS for Mobile St Pete 
+Updated by Matt Larkin 2/17/11
+*/
+
+
+body {
+padding: 0px 0px 0px 5px;
+margin: 0px;
+-webkit-text-size-adjust: none;
+overflow-x: hidden; /* stops horiz scrollbar in CSS3 */
+width: 100%;
+background-image:url(background_repeat.jpg);
+background-repeat:repeat-x;
+}
+
+img {border-style:none;
+max-width: 100%;
+}
+
+a {text-decoration:none;
+color: #0f6893;}
+
+#header a{
+}
+
+#header {
+bottom:0px;
+width:100%;
+background-color: #003399;}
+
+/*Table that holds logo image */
+#banner {
+	width:100%;
+}
+.fltlft {
+	float:left;}
+.fltrght {
+float:right;}
+#logo {
+}
+#palm {
+	float:right;
+}
+#content {
+padding: 0px 15px 0px 15px;
+}
+
+
+#footer {
+clear:both;
+text-align:center;}
+
+
+#footer a {text-decoration:underline;}
+
+#crumbs {
+background-color: #336699;
+margin:3px 0px 0px -5px;
+font-size:1.3em;
+padding: .3em .2em .2em .5em;
+font-weight:bold;
+}
+#crumbs a {
+	margin-right:10px;
+}
+
+#contact {
+border-top: 2px solid #084363;}
+
+

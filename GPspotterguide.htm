@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<!-- Format for Mobile Pages: 				-->
+<!--   Page Set up - set icon for bookmark 	-->
+<!--   Title 								-->
+<!--   Header w/ banner and crumbs 			-->
+<!--   Content 								-->
+<!--   Standard Footer 						-->
+<!--   Standard Tracking 					-->
+
+<html>
+<head>
+<!-- Set up -->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- viewport= initialize to pixel width of device screen -->
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="css/mstpete.css" rel="stylesheet" type="text/css" />
+<link href="css/jquery.mobile.structure-1.1.0.min.css" rel="stylesheet" type="text/css" />
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.mobile-1.1.0.min.js"></script>
+
+<!-- Set icon for bookmark -->
+<link rel="apple-touch-icon" href="image/GPheader.png" />
+
+<!-- Set the Title -->
+<title>2013 Honda Grand Prix of St Petersburg</title>
+</head>
+
+
+<body>
+
+<!-- header -->
+<div data-role="page" id="pg1">
+  <div id="header" data-role="header" data-theme="b">
+  
+<!-- banner -->  
+    <div id="banner"> <span id="logo"><a href="http://www.stpete.org/mobile/"><img src="images/GPheader.png" alt="Grand Prix Logo" /></a></span> 
+    </div>
+<!--/banner -->
+
+<!-- crumbs -->
+    <div id="crumbs"> 
+    <a href="GPList.htm" data-ajax="false" data-role="button" data-icon="home" data-theme="d">MobileGP Home</a> 
+    <a href="GPspotterguide.htm" data-ajax="false" data-role="button" data-icon="back" data-theme="d">
+Spotter Guide</a> 
+    </div>
+<!-- /crumbs -->
+
+  </div>
+<!--/header-->
+
+
+<!-- \/\/\/\/\/\/\/\/\/ Page Content \/\/\/\/\/\/\/\/\/ -->
+  <div data-role="content" >
+    <h1>Race Car Spotting Guide</h1>
+<img src="images/spotterguide2012_01.jpg" width="1575" height="180">
+<img src="images/spotterguide2012_02.jpg" width="1575" height="330">
+<img src="images/spotterguide2012_03.jpg" width="1575" height="282">
+<img src="images/spotterguide2012_04.jpg" width="1575" height="258">
+<img src="images/spotterguide2012_05.jpg" width="1575" height="318">
+<img src="images/spotterguide2012_06.jpg" width="1575" height="318">
+<img src="images/spotterguide2012_07.jpg" width="1575" height="282">
+<img src="images/spotterguide2012_08.jpg" width="1575" height="348">
+<img src="images/spotterguide2012_09.jpg" width="1575" height="510">
+<img src="images/spotterguide2012_10.jpg" width="1575" height="336">
+<img src="images/spotterguide2012_11.jpg" width="1575" height="312">
+<img src="images/spotterguide2012_12.jpg" width="1575" height="318">
+<img src="images/spotterguide2012_13.jpg" width="1575" height="324">
+<img src="images/spotterguide2012_14.jpg" width="1575" height="272">
+<img src="images/spotterguide2012_15.jpg" width="1575" height="376">
+<img src="images/spotterguide2012_16.jpg" width="1575" height="318">
+<img src="images/spotterguide2012_17.jpg" width="1575" height="222">
+<img src="images/spotterguide2012_18.jpg" width="1575" height="300">
+<img src="images/spotterguide2012_19.jpg" width="1575" height="246">
+  </div>
+<!-- \/\/\/\/\/\/\/\/\/ END Page Content \/\/\/\/\/\/\/\/\/ -->  
+
+
+<!--footer - changes are rare -->
+  <div id="footer" data-role="footer" data-theme="d">
+    <div data-role="navbar">
+      <ul>
+        <li><a href="index.htm" data-ajax="false">Home</a></li>
+        <li><a href="events.htm" data-ajax="false">Events</a></li>
+        <li><a href="news.htm" data-ajax="false">News</a></li>
+        <li><a href="contact.htm" data-prefetch>Contact</a></li>
+        <li><a href="#" data-ajax="false" onClick="document.cookie='nomobileplease=true;path=/'; window.location = 'http://www.stpete.org/index.asp?LeftMobileSite';">Full Site</a></li>
+      </ul>
+      <p id="copyright">Copyright 2013, All Rights Reserved</p>
+    </div>
+    <!-- /navbar -->
+  </div>
+  <!--/footer-->
+
+</div>
+<!-- end page -->
+
+<!-- ?? tracking info - no changes -->
+<script type="text/javascript">$('[data-role=page]').live('pageshow',function(event,ui){try{_gaq.push(['_setAccount','UA-8738346-1']);hash=location.hash;if(hash){_gaq.push(['_trackPageview',hash.substr(1)])}else{_gaq.push(['_trackPageview'])}}catch(err){}});</script>
+
+</body>
+</html>

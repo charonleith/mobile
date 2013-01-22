@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<!-- Format for Mobile Pages: 				-->
+<!--   Page Set up - set icon for bookmark 	-->
+<!--   Title 								-->
+<!--   Header w/ banner and crumbs 			-->
+<!--   Content 								-->
+<!--   Standard Footer 						-->
+<!--   Standard Tracking 					-->
+
+<html>
+<head>
+<!-- Set up -->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- viewport= initialize to pixel width of device screen -->
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="css/mstpete.css" rel="stylesheet" type="text/css" />
+<link href="css/jquery.mobile.structure-1.1.0.min.css" rel="stylesheet" type="text/css" />
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.mobile-1.1.0.min.js"></script>
+
+<!-- Set icon for bookmark -->
+<link rel="apple-touch-icon" href="image/GPheader.png" />
+
+<!-- Set the Title -->
+<title>2013 Honda Grand Prix of St Petersburg</title>
+</head>
+
+
+<body>
+
+<!-- header -->
+<div data-role="page" id="pg1">
+  <div id="header" data-role="header" data-theme="b">
+  
+<!-- banner -->  
+    <div id="banner"> <span id="logo"><a href="http://www.stpete.org/mobile/"><img src="images/GPheader.png" alt="Grand Prix Logo" /></a></span> 
+    </div>
+<!--/banner -->
+
+<!-- crumbs -->
+    <div id="crumbs"> 
+    <a href="GPList.htm" data-ajax="false" data-role="button" data-icon="home" data-theme="d">MobileGP Home</a> 
+    <a href="GPentrygate.htm" data-ajax="false" data-role="button" data-icon="back" data-theme="d">
+Entry Gates</a> 
+    </div>
+<!-- /crumbs -->
+
+  </div>
+<!--/header-->
+
+
+<!-- \/\/\/\/\/\/\/\/\/ Page Content \/\/\/\/\/\/\/\/\/ -->
+  <div data-role="content" >
+    <h1>Entry Gate Hours and Locations</h1>
+    <p>Friday, March 23 from 8 a.m. – 6 p.m.<br>
+      Saturday, March 24 from 8 a.m. – 6 p.m.<br>
+    Sunday, March 25 from 8 a.m. – 6 p.m.</p>
+    <ul type="disc">
+      <li><strong>Gate 1</strong> <strong><br>
+        (Disability Track Crossing location</strong>)</li>
+      <li>Corner of <a href="http://maps.google.com/maps?f=d&source=s_d&saddr=&daddr=27.770301,-82.633973&hl=en&geocode=&mra=mift&mrsp=1&sz=18&sll=27.770311,-82.63401&sspn=0.002891,0.004141&ie=UTF8&z=18">1st Ave. And 1st St. S</a>.</li>
+      <li>Offers on-site ticket sales.</li>
+      <li>Close to Brighthouse Networks Speed Zone, Pioneer Park and the Indy Fan Village.</li>
+      <li>Turns 04, 05, 06, 07, 08, 09<br>
+          <br>
+        <br>
+      </li>
+      <li><strong>Gate 5 / Firestone and Honda bridges <br>
+        (Disability Track Crossing location</strong>)</li>
+      <li>located at <a href="http://maps.google.com/maps?f=d&source=s_d&saddr=&daddr=27.76574,-82.63555&hl=en&geocode=&mra=mift&mrsp=1&sz=18&sll=27.765725,-82.63555&sspn=0.002891,0.004141&ie=UTF8&z=18">5th Avenue S. and 2nd Street N</a>.,</li>
+      <li>Offers on-site ticket sales.</li>
+      <li>Will Call ticket window.</li>
+      <li>Trackside Club</li>
+      <li>Paddock car areas.</li>
+      <li>Honda Plaza.</li>
+      <li>Mahaffey Theater: box office open for ticket upgrades and Lost and Found.</li>
+      <li>Acura Yacht Club</li>
+      <li>City of St. Petersburg Suite</li>
+      <li>Media Center</li>
+      <li>Gasoline Alley</li>
+      <li>Grandstands (Grandstand 10 has disabled staging area available)</li>
+      <li>Start / Finish Line</li>
+      <li>Official Merchandise</li>
+      <li>Ferris Wheel</li>
+      <li>Turns 01, 02, 03, 10. 11, 12, 13, 14 <br>
+          <br>
+        <br>
+      </li>
+      <li>Both gates are handicapped accessible, crossing times are subject to change if necessary.</li>
+    </ul>
+    <p>Please see posted <a href="http://www.stpete.org/mobilegp/trackcross.html" $included="null">track crossing times</a>.</p>
+  </div>
+<!-- \/\/\/\/\/\/\/\/\/ END Page Content \/\/\/\/\/\/\/\/\/ -->  
+
+
+<!--footer - changes are rare -->
+  <div id="footer" data-role="footer" data-theme="d">
+    <div data-role="navbar">
+      <ul>
+        <li><a href="index.htm" data-ajax="false">Home</a></li>
+        <li><a href="events.htm" data-ajax="false">Events</a></li>
+        <li><a href="news.htm" data-ajax="false">News</a></li>
+        <li><a href="contact.htm" data-prefetch>Contact</a></li>
+        <li><a href="#" data-ajax="false" onClick="document.cookie='nomobileplease=true;path=/'; window.location = 'http://www.stpete.org/index.asp?LeftMobileSite';">Full Site</a></li>
+      </ul>
+      <p id="copyright">Copyright 2013, All Rights Reserved</p>
+    </div>
+    <!-- /navbar -->
+  </div>
+  <!--/footer-->
+
+</div>
+<!-- end page -->
+
+<!-- ?? tracking info - no changes -->
+<script type="text/javascript">$('[data-role=page]').live('pageshow',function(event,ui){try{_gaq.push(['_setAccount','UA-8738346-1']);hash=location.hash;if(hash){_gaq.push(['_trackPageview',hash.substr(1)])}else{_gaq.push(['_trackPageview'])}}catch(err){}});</script>
+
+</body>
+</html>

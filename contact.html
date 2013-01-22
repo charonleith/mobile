@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width; initial-scale=1.0;" />
+
+<link href="mstpete.css" rel="stylesheet" type="text/css" />
+<link href="http://www.stpete.org/scripts/css/jquery.mobile.structure-1.0.min.css" rel="stylesheet" type="text/css" />
+<script src="http://www.stpete.org/scripts/jquery.min.js"></script>
+<script src="http://www.stpete.org/scripts/jquery.mobile-1.0.js"></script>
+<title>Mobile St Pete</title>
+<script>
+ $(document).ready(function() {
+  // disable ajax nav
+  $.mobile.ajaxLinksEnabled = false;
+ });
+</script>
+</head>
+
+<body>
+
+<!--Banner with Logo-->
+<div id="header" data-role="header" data-theme="b">
+    <table id="banner">
+        <tr>
+            <td id="logo"><a href="http://www.stpete.org/mobile/"><img src="http://www.stpete.org/images/logo.png" alt="pelican" /></a></td>
+            <td id="palm"><img class="palm" src="http://www.stpete.org/images/palm.png" alt="palmtree" /></td>
+        </tr>
+    </table>                                                   
+
+<div id="crumbs"><a href="http://www.stpete.org/mobile/" data-ajax="false" data-role="button" data-icon="home" data-theme="d">Home</a><!--&nbsp;&#124;&nbsp;The Vinoy Park Hotel--></div>
+<div data-role="navbar">
+	<ul>
+		<li><a href="index.asp" data-direction="reverse">Home</a></li>
+        <li><a href="events.php" data-direction="reverse">Events</a></li>
+        <li><a href="news.php" data-direction="reverse">News</a></li>
+        <li><a href="contact.html" class="ui-btn-active">Contact</a></li>
+	</ul>
+</div><!-- /navbar -->
+</div><!--/header-->
+
+<div data-role="content">
+<h2>Top Stories</h2><br/>
+
+<div id="content">
+		<ul data-role="listview" data-theme="c">
+            <li>
+            <strong>Main Information Line</strong>
+            <a href="tel:7278937111">727-893-7111</a>
+            </li>
+            <li>
+            <strong>Police and Fire Emergency</strong><a href="tel:911">911</a>
+            </li>
+            <li>
+            <strong>Police Non-Emergency</strong>
+            <a href="tel:7278937780">727-893-7780</a>
+            </li>
+            <li>
+            <strong>Police Crime Watch</strong>
+            <a href="tel:7278937559">727-893-7559</a>
+            </li>
+            <li>
+            <strong>Illegal Dumping</strong>
+            <a href="tel:7278937398">727-893-7398</a>
+            </li>
+            <li>
+            <strong>Events</strong>
+            <a href="tel:7278937465">727-893-7465</a>
+            </li>
+            <li>
+            <strong>Parks and Recreation</strong>
+            <a href="tel:7278937441">727-893-7441</a>
+            </li>
+            <li>
+            <strong>Codes</strong>:<a href="tel:7278937373" >727-893-7373</a>
+            </li>
+            <li>
+            <strong>Public Utilities</strong>
+            <a href="tel:7278937341">727-893-7341</a>
+            </li>
+            <li>
+            <strong>Water Resources</strong>
+            <a href="tel:7278937361">727-893-7361</a>
+            </li>
+        </ul>
+
+
+
+    </div><!-- END content div -->
+<br />
+</div><!-- end data role content -->
+<!--Footer With Main Links-->
+<div id="footer" data-role="footer" data-theme="d">
+<div data-role="navbar">
+	<ul>
+		<li><a href="index.asp" data-prefetch>Home</a></li>
+        <li><a href="events.php">Events</a></li>
+        <li><a href="news.php">News</a></li>
+        <li><a href="contact.html" data-prefetch>Contact</a></li>
+		<li><a href="http://www.stpete.org/">Full Site</a></li>
+	</ul>
+    <p>Copyright 2011, All Rights Reserved</p>
+
+</div><!-- /navbar -->
+</div>
+</body>
+</html>

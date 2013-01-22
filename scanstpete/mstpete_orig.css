@@ -1,0 +1,226 @@
+@charset "utf-8";
+/* CSS for Mobile St Pete 
+Updated by Matt Larkin 2/17/11
+*/
+
+
+body {
+min-height:320px;
+padding: 0px 0px 0px 5px;
+margin: 0px;
+-webkit-text-size-adjust: none;
+overflow-x: hidden; /* stops horiz scrollbar in CSS3 */
+width: 100%;
+}
+
+img {border-style:none;}
+
+a {text-decoration:none;
+color: #0f6893;}
+
+h1 {
+	color:  #D47900;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 1.5em;
+	font-weight: bold;
+	font-variant:small-caps;
+	margin: 15px 5px 0px 0px;
+	}
+h2 {
+	color: #114C72;
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+	font-size: 1.8em;
+	font-weight: bold;
+	margin: 15px 5px 0px 0px;
+	font-weight:lighter;
+}
+h3 {
+	color: #114C72;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1.6em;
+	font-weight: bold;
+	margin: 15px 5px 0px 0px;
+}
+h4 {
+	color: #666;
+	font-family: Arial, Verdana,  Helvetica, sans-serif;
+	font-size: 1.3em;
+	font-weight: bolder;
+	font-variant:small-caps;
+	margin: 15px 5px 0px 0px;
+}
+h5 {
+	color: #000000;
+	font-family: haettenschweiler, Arial, Helvetica, sans-serif;
+	font-size: 1.1em;
+	font-weight: normal;
+	margin: 15px 5px 0px 0px;
+}
+h6 {
+	color: #000000;
+	font-family: haettenschweiler, Arial, Helvetica, sans-serif;
+	font-variant:small-caps;
+	font-size: 1em;
+	font-weight: normal;
+	margin: 15px 5px 0px 0px;
+}
+/* Show/Hide divs */
+h3.trigger {
+	padding: 0 0 0 25px;
+	margin: 0 0 5px 0;
+	background: url(images/show_hide_bk_toggle_btn.jpg) no-repeat;
+	height: 21px;
+	display:block;
+	}
+h3.trigger a {
+	text-decoration: none;
+	display: block;
+}
+h3.active {background-position: 0px -21px;} /*--When toggle is triggered, it will shift the image to the bottom to show its "opened" state--*/
+.toggle_container {
+	margin: 0 0 5px;
+	padding: 0;
+	border-top: 1px solid #d6d6d6;
+	overflow: hidden;
+	clear: both;
+}
+.toggle_container .block {
+	padding: 12px; /*--Padding of Container--*/
+}
+
+#header {
+bottom:0px;
+width:100%;
+background-color:#006699;}
+
+/*Table that holds logo image */
+#banner {
+	width:100%;
+}
+
+#logo {
+}
+#palm {
+}
+#content {
+padding: 0px 15px 0px 15px;
+}
+.phoneimg {
+	max-width: 100%; 
+	width: auto; 
+	height: auto;
+}
+
+#searchbox
+{
+width:100%;
+height: 1.2em;
+padding: 5px 5px 15px 5px;
+/* background-color:#3F86A9; */
+text-align:center;
+}
+
+#searchbox_inner
+{
+width: 95%;
+height: 1.2em;
+text-align:left;
+}
+
+#footer {
+clear:both;
+padding:1em;
+font-size: .9em;
+text-align:center;}
+
+#footer a {text-decoration:underline;}
+
+#crumbs {
+background-color:#CCCCCC;
+margin:3px 0px 0px -5px;
+font-size:1.3em;
+padding: .3em .2em .2em .5em;
+font-weight:bold;
+}
+
+#contact {
+border-top: 2px solid #084363;}
+
+/*main menu icons*/
+.icons {
+overflow:hidden;
+margin-top:5px;
+text-align:center;}
+
+/*main menu column layout for icons*/
+.col {float:left;
+width: 31%;}
+
+.col p {text-align:center;}
+
+.item {margin:.1em .1em 2em .1em;}
+
+/* Blue Option Buttons */
+#menu
+{width:100%;}
+
+#menu li
+{width: 99%;
+border-top: 2px solid #0f6893;
+border-right: 2px solid #084363;
+border-bottom: 2px solid #084363;
+border-left: 2px solid #0f6893;
+list-style-type:none;
+padding:.4em;
+margin-left:-35px;
+margin-top:10px;
+text-indent:0;
+font-size:1.4em;
+/* background-color: #23b7ff; */
+background-color:#54b0df;
+}
+
+#menu a {
+color:#000000;
+font-weight:bold;
+font-variant:small-caps;
+display:block;
+}
+
+/*Green Button for More Information Links*/
+.more {
+    margin: 2px 0px 2px 18px;
+	width:241px;
+	text-indent: -10px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1.5em;
+	}
+
+.more a {
+ /* Sliding right image */
+background: transparent url('http://www.stpete.org/images/recovery_button_right.png') no-repeat scroll top right; 
+display: block;
+float: left;
+height: 32px; /* CHANGE THIS VALUE ACCORDING TO IMAGE HEIGHT */
+margin-right: 6px;
+padding-right: 20px; /* CHENGE THIS VALUE ACCORDING TO RIGHT IMAGE WIDTH */
+/* FONT PROPERTIES */
+color: #FFFFFF;
+font-family: Arial, Helvetica, sans-serif;
+font-size:11px;
+font-weight:bold;
+text-align:center;
+font-size:1.2em;
+}
+
+.more a span {
+/* Background left image */ 
+background: transparent url('http://www.stpete.org/images/recovery_button_left.png') no-repeat; 
+display: block;
+line-height: 22px; /* CHANGE THIS VALUE ACCORDING TO BUTTONG HEIGHT */
+width:165px;
+padding: 7px 0 5px 18px;
+} 
+
+/* content div */
+#main {width:100%;}

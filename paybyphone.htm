@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link href="css/mstpete.css" rel="stylesheet" type="text/css" />
+    <link href="css/jquery.mobile.structure-1.1.0.min.css" rel="stylesheet" type="text/css" />
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.mobile-1.1.0.min.js"></script>
+    <link rel="apple-touch-icon" href="image/Surprising-St_icon.png" />
+
+<!-- Unique to this page --> 
+<!-- /Unique to this page -->
+
+<title>Watch Live TV</title>
+
+</head>
+
+<body>
+<!-- =-=-=-=-=-== Page 1 =-=-=-=-==-=-= -->
+<div data-role="page" id="pg1">
+<div id="header" data-role="header" data-theme="b">
+    <div id="banner">
+            <span id="logo"><a href="http://www.stpete.org/mobile/"><img src="images/logo.png" alt="Logo" /></a></span>
+    </div><!-- /banner -->                                                   
+
+<div id="crumbs">
+	<a href="http://www.stpete.org/mobile/" data-ajax="false" data-role="button" data-icon="home" data-theme="d">Home</a>
+    <a href="http://www.stpete.org/mobile/parking.php" data-ajax="false" data-role="button" data-icon="back" data-theme="d">Parking</a>
+</div><!-- /crumbs -->
+
+<div data-role="navbar">
+	<ul>
+		<!--<li><a href="#pg1" class="ui-btn-active">Attractions</a></li>-->
+	</ul>
+</div><!-- /navbar -->
+</div><!--/header-->
+
+
+<div data-role="content" >
+
+ <h1>Pay by Phone Parking!</h1>   
+ <img src="images/paybyfonemeter.jpg">
+ <p>Residents and visitors to St. Petersburg are now able to conduct their metered   parking transactions by mobile phone, a revolutionary new service that will   allow residents and visitors in downtown St. Petersburg to save time and money   by using their mobile phone to pay for parking. To use the new Parkmobile   system, customers register for free at <a href="http://www.parkmobile.com/">www.parkmobile.com</a>. Once registered,   motorists can use a mobile app, the internet, or a toll free phone call,   877-PARK-714 or 1-877-727-5714 to pay for parking ($0.35 per transaction or   $1.75 per month and $0.25 per transaction for frequent users). Motorists can   also select the option to receive text message alerts and reminders fifteen   minutes before their time expires.</p>
+ <h3>Grab the Parkmobile app for</h3>
+ <div class="ui-grid-a">
+ 	<div class="ui-block-a">
+    	<a href="https://play.google.com/store/apps/details?id=net.sharewire.parkmobilev2&feature=nav_result#?t=W10." data-role="button">Android<br>
+ (google)</a>
+    </div><!--/block-a -->
+ 	<div class="ui-block-b">
+    	<a href="http://itunes.apple.com/us/app/parkmobile/id365399299?mt=8" data-role="button">iOS<br>
+ (iphone)</a>
+    </div><!--/block-b -->
+ </div><!-- /grid-a -->
+
+ 
+</div><!-- end data role content -->
+
+<!--footer-->
+<div id="footer" data-role="footer" data-theme="d">
+    <div data-role="navbar">
+        <ul>
+            <li><a href="index.htm" data-ajax="false">Home</a></li>
+            <li><a href="events.htm" data-ajax="false">Events</a></li>
+            <li><a href="news.htm" data-ajax="false">News</a></li>
+            <li><a href="contact.htm" data-prefetch>Contact</a></li>
+            <li><a href="#" data-ajax="false" onClick="document.cookie='nomobileplease=true;path=/'; window.location = 'http://www.stpete.org/index.asp?LeftMobileSite';">Full Site</a></li>
+        </ul>
+        <p id="copyright">Copyright 2012, All Rights Reserved</p>
+    
+    </div><!-- /navbar -->
+</div><!--/footer-->
+
+</div><!-- end page1 -->
+
+<script type="text/javascript">$('[data-role=page]').live('pageshow',function(event,ui){try{_gaq.push(['_setAccount','UA-8738346-1']);hash=location.hash;if(hash){_gaq.push(['_trackPageview',hash.substr(1)])}else{_gaq.push(['_trackPageview'])}}catch(err){}});</script>
+</body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link href="css/mstpete.css" rel="stylesheet" type="text/css" />
+    <link href="css/jquery.mobile.structure-1.1.0.min.css" rel="stylesheet" type="text/css" />
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.mobile-1.1.0.min.js"></script>
+    <link rel="apple-touch-icon" href="image/Surprising-St_icon.png" />
+
+<script type="text/javascript">var gaJsHost=(("https:"==document.location.protocol)?"https://ssl.":"http://www.");document.write(unescape("%3Cscript src='"+gaJsHost+"google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));</script><script type="text/javascript">try{var pageTracker=_gat._getTracker("UA-8738346-1");pageTracker._trackPageview()}catch(err){}</script>
+
+<!-- Unique to this page --> 
+<script type="text/javascript">
+$(document).ready(function() {
+document.cookie='nomobileplease=null;path=/';
+document.cookie='nopromptplease=null;path=/';
+	 if(document.location.href.indexOf("?redirected=true") > -1) {
+		alert('Welcome to our mobile site. To visit our regular web site click "Full Website" at the bottom.');
+	 }
+    $("#webcamimg").attr("src", "/WebCam_RAMdisk/camera1.jpg?"+new Date().getTime());
+});
+</script>
+<!-- /Unique to this page -->
+
+    <title>St. Pete.org - Mobile</title>
+</head>
+
+<body>
+
+<div data-role="page">
+
+<!-- header -->
+<div id="header" data-role="header" data-theme="b">
+    <div id="banner">
+            <span id="logo"><a href="http://www.stpete.org/mobile/"><img src="images/logo.png" alt="Logo" /></a></span>
+    </div><!-- /banner -->                                                   
+    <div data-role="navbar">
+        <ul>
+            <li><a href="index.htm" class="ui-btn-active" data-ajax="false">Home</a></li>
+            <li><a href="events.htm" data-ajax="false">Events</a></li>
+            <li><a href="news.htm" data-ajax="false">News</a></li>
+            <li><a href="contact.htm" data-prefetch data-ajax="false">Contact</a></li>
+        </ul>
+    </div><!-- /navbar -->
+</div><!--/header-->
+
+<!-- \/\/\/\/\/\/\/\/\/ Page Content \/\/\/\/\/\/\/\/\/ -->
+<div data-role="content" >
+<span id="palm"></span>
+<h2>Explore St Pete!</h2>
+
+		<ul data-role="listview" data-theme="c" data-inset="true">
+                <!--<li><a href="list.html" data-ajax="false"><img class="newsimage" src="images/scanstpete_brochure.png"><h1>Scan St. Pete</h1><p>Scan QR codes around the city.</p><br></a></li>-->
+                <li><a href="topstories.htm" data-ajax="false"><img class="newsimage" src="images/News_icon.png">
+                  <h1>Top News Stories</h1>
+                  <p>A quick look at our top stories.</p><br></a></li>
+                <li><a href="50things.html" data-ajax="false"><img class="newsimage" src="images/Downtown_fireworks.jpg">
+                  <h1>Top 50 Things</h1>
+                  <p>Find fascinating things to do in St. Pete.</p><br></a></li>
+                <li><a href="webcam_list.htm" data-ajax="false"><img class="newsimage" id="webcamimg"src="/WebCam_RAMdisk/camera1.jpg">
+                  <h1>Webcams</h1>
+                  <p>View live webcams around the city.</p><br></a></li>
+                  
+                <li><a href="ustream.htm" data-ajax="false"><img class="newsimage" src="images/ustream.png"><h1>Watch "StPeteTV" Live!</h1><p>Watch live programs and meetings.</p><br></a></li>
+                <li><a href="youtube.htm" data-ajax="false"><img class="newsimage" src="images/youtube.png"><h1>On YouTube</h1><p>Stay updated with our educational and informative shows.</p><br></a></li>
+                <li><a href="parking.php" data-ajax="false"><img class="newsimage" src="images/parking_symbol.png">
+                  <h1>Parking</h1>
+                  <p>Parking options downtown.</p><br></a></li>
+                <li><a href="maps.htm" data-ajax="false"><img class="newsimage" src="images/map_icon.png">
+                  <h1>Maps</h1>
+                  <p>Common maps of St. Pete</p><br></a></li>
+                  <li><a href="meetings.htm" data-ajax="false"><img class="newsimage" src="images/MeetingsIcon.png">
+                  <h1>Meeting Schedule</h1>
+                  <p>Weekly city government meetings.</p><br></a></li>
+                  <li><a href="seeclickfix.htm" data-ajax="false"><img class="newsimage" src="images/seeclickfix.thumb.png">
+                  <h1>See, Click, Fix</h1>
+                  <p>Report problems.</p><br></a></li>
+                  <li><a href="residents_list.htm" data-ajax="false"><img class="newsimage" src="images/residents_icon_sm.jpg">
+                  <h1>Residents</h1>
+                  <p>Information for local residents of St. Pete.</p><br></a></li>
+
+    </ul>
+
+</div>
+<!-- \/\/\/\/\/\/\/\/\/ END Page Content \/\/\/\/\/\/\/\/\/ -->
+
+<!--footer-->
+<div id="footer" data-role="footer" data-theme="d">
+    <div data-role="navbar">
+        <ul>
+            <li><a href="index.htm" data-ajax="false">Home</a></li>
+            <li><a href="events.htm" data-ajax="false">Events</a></li>
+            <li><a href="news.htm" data-ajax="false">News</a></li>
+            <li><a href="contact.htm" data-prefetch>Contact</a></li>
+        </ul>
+    <div data-role="navbar">
+        <ul>
+             <li><a href="#" data-ajax="false" onClick="document.cookie='nomobileplease=true;path=/'; window.location = 'http://www.stpete.org/index.asp?LeftMobileSiteIndex';">Full Website - Desktop Version</a></li>
+       </ul>
+        <p id="copyright">Copyright 2012, All Rights Reserved</p>
+    
+    </div><!-- /navbar -->
+</div><!--/footer-->
+
+</div><!-- /page -->
+
+<script type="text/javascript">$('[data-role=page]').live('pageshow',function(event,ui){try{_gaq.push(['_setAccount','UA-8738346-1']);hash=location.hash;if(hash){_gaq.push(['_trackPageview',hash.substr(1)])}else{_gaq.push(['_trackPageview'])}}catch(err){}});</script>
+</body>
+</html>

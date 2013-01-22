@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link href="css/mstpete.css" rel="stylesheet" type="text/css" />
+    <link href="css/jquery.mobile.structure-1.1.0.min.css" rel="stylesheet" type="text/css" />
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.mobile-1.1.0.min.js"></script>
+    <link rel="apple-touch-icon" href="image/Surprising-St_icon.png" />
+
+<!-- Unique to this page --> 
+<!-- /Unique to this page -->
+
+<title>Watch Live TV</title>
+
+</head>
+
+<body>
+<!-- =-=-=-=-=-== Page 1 =-=-=-=-==-=-= -->
+<div data-role="page" id="pg1">
+<div id="header" data-role="header" data-theme="b">
+    <div id="banner">
+            <span id="logo"><a href="http://www.stpete.org/mobile/"><img src="images/logo.png" alt="Logo" /></a></span>
+    </div><!-- /banner -->                                                   
+
+<div id="crumbs">
+	<a href="http://www.stpete.org/mobile/" data-ajax="false" data-role="button" data-icon="home" data-theme="d">Home</a>
+    <a href="http://www.stpete.org/mobile/ustream.htm" data-ajax="false" data-role="button" data-icon="back" data-theme="d">Watch TV</a>
+</div><!-- /crumbs -->
+
+<div data-role="navbar">
+	<ul>
+		<!--<li><a href="#pg1" class="ui-btn-active">Attractions</a></li>-->
+	</ul>
+</div><!-- /navbar -->
+</div><!--/header-->
+
+
+<div data-role="content" >
+
+ <h1>Watch "StPeteTV" Live!</h1>   
+ <p><img src="images/ustream.png" width="138" height="176" style="float:right;">You can now stream our television station live to your mobile device. Simply download and install the Ustream.tv application into your Andorid or iOS device and tune into our &quot;StPeteTV&quot; channel to catch the next City Council meeting live from where ever you happen to be. Now enjoying all that St. Pete has to offer doesn't mean you have stay inside to stay involved in your local city governemnt. </p>
+ <h3>Grab the ustream.tv app for</h3>
+ <div class="ui-grid-a">
+ 	<div class="ui-block-a">
+    	<a href="https://play.google.com/store/apps/details?id=tv.ustream.ustream&hl=en" data-role="button">Android<br>
+ (google)</a>
+    </div><!--/block-a -->
+ 	<div class="ui-block-b">
+    	<a href="http://itunes.apple.com/us/app/ustream/id301520250?mt=8" data-role="button">iOS<br>
+ (iphone)</a>
+    </div><!--/block-b -->
+ </div><!-- /grid-a -->
+ <h3>search for our "<strong style="color:#369;">StPeteTV</strong>" channel after installing</h3>
+ 
+</div><!-- end data role content -->
+
+<!--footer-->
+<div id="footer" data-role="footer" data-theme="d">
+    <div data-role="navbar">
+        <ul>
+            <li><a href="index.htm" data-ajax="false">Home</a></li>
+            <li><a href="events.htm" data-ajax="false">Events</a></li>
+            <li><a href="news.htm" data-ajax="false">News</a></li>
+            <li><a href="contact.htm" data-prefetch>Contact</a></li>
+            <li><a href="#" data-ajax="false" onClick="document.cookie='nomobileplease=true;path=/'; window.location = 'http://www.stpete.org/index.asp?LeftMobileSite';">Full Site</a></li>
+        </ul>
+        <p id="copyright">Copyright 2012, All Rights Reserved</p>
+    
+    </div><!-- /navbar -->
+</div><!--/footer-->
+
+</div><!-- end page1 -->
+
+<script type="text/javascript">$('[data-role=page]').live('pageshow',function(event,ui){try{_gaq.push(['_setAccount','UA-8738346-1']);hash=location.hash;if(hash){_gaq.push(['_trackPageview',hash.substr(1)])}else{_gaq.push(['_trackPageview'])}}catch(err){}});</script>
+</body>
+</html>

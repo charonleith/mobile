@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link href="css/mstpete.css" rel="stylesheet" type="text/css" />
+    <link href="css/jquery.mobile.structure-1.1.0.min.css" rel="stylesheet" type="text/css" />
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.mobile-1.1.0.min.js"></script>
+    <link rel="apple-touch-icon" href="image/Surprising-St_icon.png" />
+
+<!-- Unique to this page --> 
+<script type="text/javascript">
+$(document).ready(function() {
+$('#AjaxLoadPage').load('php/contentgrabMeetings.php #container', function() {
+																		   $('.meetingtable tr:even').addClass('alt');
+																																					//Links behave as external to mobile site
+																			$('#container a').attr("data-ajax","false");
+																			//Set cookie so visitor does not redirect back
+																			$('#container a').click(function() {    
+																				document.cookie='nomobileplease=true;path=/';
+																				}); 
+																			//Change source of images since ajax load will not match original
+																			$('#container img').each(function() {    
+																				var origSrc = $(this).attr("src");
+																				if (!origSrc.indexOf("http") == 0) {
+																					$(this).attr("src",'http://www.stpete.org/' + origSrc);
+																				};
+																				}); 
+
+																		   });
+});</script>
+<style type="text/css">
+.title_display{
+	display:none;
+}
+#container img{
+	}
+#container td{
+	vertical-align:top;
+	}
+.meetingtable tr.alt td{
+	background-color:#DADADA;
+	}
+
+</style>
+<!-- /Unique to this page -->
+
+<title>Meeting Schedule</title>
+
+</head>
+
+<body>
+<!-- =-=-=-=-=-== Page 1 =-=-=-=-==-=-= -->
+<div data-role="page" id="pg1">
+<div id="header" data-role="header" data-theme="b">
+    <div id="banner">
+            <span id="logo"><a href="http://www.stpete.org/mobile/"><img src="images/logo.png" alt="Logo" /></a></span>
+    </div><!-- /banner -->                                                   
+
+<div id="crumbs">
+	<a href="http://www.stpete.org/mobile/" data-ajax="false" data-role="button" data-icon="home" data-theme="d">Home</a>
+    <a href="http://www.stpete.org/mobile/meetings.htm" data-ajax="false" data-role="button" data-icon="back" data-theme="d">Meetings</a>
+</div><!-- /crumbs -->
+
+<div data-role="navbar">
+	<ul>
+		<!--<li><a href="#pg1" class="ui-btn-active">Attractions</a></li>-->
+	</ul>
+</div><!-- /navbar -->
+</div><!--/header-->
+
+
+<div data-role="content" >
+
+ <h1>Meeting Schedule</h1>   
+ 
+ <div id="AjaxLoadPage"><img src="images/ajax-loader.gif" width="46" height="46"></div>
+ 
+</div><!-- end data role content -->
+
+<!--footer-->
+<div id="footer" data-role="footer" data-theme="d">
+    <div data-role="navbar">
+        <ul>
+            <li><a href="index.htm" data-ajax="false">Home</a></li>
+            <li><a href="events.htm" data-ajax="false">Events</a></li>
+            <li><a href="news.htm" data-ajax="false">News</a></li>
+            <li><a href="contact.htm" data-prefetch>Contact</a></li>
+            <li><a href="#" data-ajax="false" onClick="document.cookie='nomobileplease=true;path=/'; window.location = 'http://www.stpete.org/index.asp?LeftMobileSite';">Full Site</a></li>
+        </ul>
+        <p id="copyright">Copyright 2012, All Rights Reserved</p>
+    
+    </div><!-- /navbar -->
+</div><!--/footer-->
+
+</div><!-- end page1 -->
+
+<script type="text/javascript">$('[data-role=page]').live('pageshow',function(event,ui){try{_gaq.push(['_setAccount','UA-8738346-1']);hash=location.hash;if(hash){_gaq.push(['_trackPageview',hash.substr(1)])}else{_gaq.push(['_trackPageview'])}}catch(err){}});</script>
+</body>
+</html>

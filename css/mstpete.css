@@ -1,0 +1,195 @@
+@charset "utf-8";
+/* CSS for Mobile St Pete */
+
+body {
+padding: 0px 0px 0px 5px;
+margin: 0px;
+-webkit-text-size-adjust: none;
+overflow-x: hidden; /* stops horiz scrollbar in CSS3 */
+width: 100%;
+background-repeat:repeat-x;
+}
+
+img {border-style:none;
+max-width: 100%;
+}
+
+a {text-decoration:none;
+color: #0f6893;}
+
+#header a{
+}
+
+#header {
+bottom:0px;
+width:100%;
+background-color: #003399;}
+
+/*Table that holds logo image */
+#banner {
+	width:100%;
+}
+.fltlft {
+	float:left;}
+.fltrght {
+float:right;}
+
+#logo {
+}
+.ui-content{
+	/* position:absolute; */
+	/* width:95%; */
+	/* height:111px; */
+	background-image:url(../images/palm_op20.png);
+	background-repeat:no-repeat;
+	background-position:right;
+	background-position:100% 0px;
+	}
+	
+	
+#content {
+padding: 0px 15px 0px 15px;
+}
+
+
+#footer {
+clear:both;
+text-align:center;}
+
+
+#footer a {text-decoration:underline;}
+
+#crumbs {
+background-color: #336699;
+margin:3px 0px 0px -5px;
+font-size:1.3em;
+padding: .3em .2em .2em .5em;
+font-weight:bold;
+}
+#crumbs a {
+	margin-right:10px;
+}
+
+#contact {
+border-top: 2px solid #084363;}
+#copyright {
+	font-size:10px;
+	color:#666666;
+}
+
+/** RSS FEED **/
+.rssFeed {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 90%;
+}
+.rssFeed a {
+	color: #444;
+	text-decoration: none;
+}
+.rssFeed a:hover {
+	color: #000;
+	text-decoration: underline;
+}
+
+.rssHeader { padding: 0.2em 0; }
+
+.rssBody { border: 1px solid #999; }
+.rssBody ul { list-style: none; }
+.rssBody ul, .rssRow, .rssRow h4, .rssRow p {
+	margin: 0;
+	padding: 0;
+}
+
+.rssRow { padding: 0.8em; }
+.rssRow h4 { font-size: 1.1em; }
+.rssRow p { white-space:normal; }
+.rssRow div {
+	font-size: 90%;
+	color: #666;
+	margin: 0.2em 0 0.4em 0;
+}
+
+.odd { background-color: #d1eaf6; }
+.even { background-color: #f3f3f3; }
+
+.rssRow .rssMedia {
+	padding: 0.5em;
+	font-size: 1em;
+}
+.ui-title, .ui-li-heading, .ui-li-desc, .rssfeed { white-space:normal}
+
+
+
+#iconcar {
+	background-position:-264px 0px;
+}
+#iconentry {
+	background-position:-44px 0px;
+}
+#iconschedule {
+	background-position:-220px 0px;
+}
+#iconmpas {
+	background-position:-176px 0px;
+}
+#iconqs {
+	background-position:-132px 0px;
+}
+#iconaid {
+	background-position:-88px 0px;
+}
+#iconband {
+	background-position:-308px 0px;
+}
+#iconspot {
+	background-position:0px 0px;
+}
+#iconmaps {
+	background-position:-176px 0px;
+}
+#icontickets {
+	background-position:-352px 0px;
+}
+#iconcust {
+	background-position:-396px 0px;
+}
+.icondefaults {
+	background-image:url(../images/menu_icon_set.png);
+	width:44px;
+	height:44px;
+	float:left;
+	margin-right:.4em;
+	position:relative;
+	top:-.2em;
+}
+
+
+
+#iconcamera {
+	background-position:0px 0px;
+}
+#iconcrossing {
+	background-position:0px -54px;
+}
+#iconfoodmerch {
+	background-position:0px -108px;
+}
+#iconnearby {
+	background-position:0px -162px;
+}
+#iconnews {
+	background-position:0px -206px;
+}
+#icontrolley {
+	background-position:0px -260px;
+}
+.icondefault2 {
+	background-image:url(../images/GPicons.png);
+	width:44px;
+	height:44px;
+	float:left;
+	margin-right:.4em;
+	position:relative;
+	top:-.2em;
+}
+

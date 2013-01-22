@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<!-- Format for Mobile Pages: 				-->
+<!--   Page Set up - set icon for bookmark 	-->
+<!--   Title 								-->
+<!--   Header w/ banner and crumbs 			-->
+<!--   Content 								-->
+<!--   Standard Footer 						-->
+<!--   Standard Tracking 					-->
+
+<html>
+<head>
+<!-- Set up -->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- viewport= initialize to pixel width of device screen -->
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="css/mstpete.css" rel="stylesheet" type="text/css" />
+<link href="css/jquery.mobile.structure-1.1.0.min.css" rel="stylesheet" type="text/css" />
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.mobile-1.1.0.min.js"></script>
+
+
+<!-- google analytics -->
+<script type="text/javascript">var gaJsHost=(("https:"==document.location.protocol)?"https://ssl.":"http://www.");document.write(unescape("%3Cscript src='"+gaJsHost+"google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));</script>
+<script type="text/javascript">try{var pageTracker=_gat._getTracker("UA-8738346-1");pageTracker._trackPageview()}catch(err){}</script>
+
+<!-- send to full site  instead of mobile site -->
+<script type="text/javascript">
+$(document).ready(function() {
+document.cookie='nomobileplease=null;path=/';
+document.cookie='nopromptplease=null;path=/';
+	 if(document.location.href.indexOf("?redirected=true") > -1) {
+		alert('Welcome to our mobile site. To visit our regular web site click "Full Website" at bottom right.');
+	 }
+    });
+</script>
+
+<!-- Set icon for bookmark -->
+<link rel="apple-touch-icon" href="image/GPheader.png" />
+
+<!-- Set the Title -->
+<title>St. Pete.org - Mobile Grand Prix</title>
+</head>
+
+
+<body>
+
+<!-- page header -->
+<div data-role="page">
+  <div id="header" data-role="header" data-theme="b">
+
+<!-- banner -->
+  <div id="banner"> <span id="logo">
+  <a href="http://www.stpete.org/mobile/">
+  <img src="images/GP2013header.png" alt="Grand Prix Logo" />
+    </a>
+	
+  	<img src="images/GP2013stripes.png" alt="Grand Prix stripes" background-repeat:repeat-x />
+	
+	</span> 
+  </div>
+<!-- /banner -->
+   
+<!-- crumbs -->
+    <div id="crumbs"> 
+    <a href="GPList.htm" data-ajax="false" data-role="button" data-icon="home" data-theme="d">MobileGP Home</a> 
+    </div>
+<!-- /crumbs -->
+
+</div>
+<!-- end of page header-->
+
+
+<!-- \/\/\/\/\/\/\/\/\/ Page Content \/\/\/\/\/\/\/\/\/ -->
+<div data-role="content" > <span id="palm"></span>
+  <h2>Explore St Pete Honda Grand Prix!</h2>
+  <ul data-role="listview" data-theme="c" data-inset="true">
+    <!--<li><a href="list.html" data-ajax="false">
+	<img class="newsimage" src="images/scanstpete_brochure.png">
+	<h1>Scan St. Pete</h1>
+	<p>Scan QR codes around the city.</p><br></a>
+	</li>-->
+
+<li data-role="list-divider">Getting There</li>
+    
+	<li><a href="GPevents.htm" data-ajax="false">
+	  <div id="iconnews" class="icondefault2"></div> 
+      <h1>Events Downtown</h1>
+      <br>
+      </a></li>
+
+    <li><a href="http://m.visitstpeteclearwater.com/CMS/MobiRenderContent.aspx?contentGroupID=24822">
+	  <div id="iconnearby" class="icondefault2"></div> 
+      <h1>Nearby Hotels and Resturants</h1>
+      <br>
+      </a></li>
+
+    <li><a href="GPparking.htm">
+	  <div id="iconcar" class="icondefaults"></div>
+      <h1>Parking & Transportation Information</h1>
+      <br>
+      </a></li>
+
+    <li><a href="GPshuttle.htm">
+	  <div id="icontrolley" class="icondefault2"></div> 
+      <h1>Trolley Shuttle Service</h1>
+      <br>
+      </a></li>
+    
+ <li data-role="list-divider">At the Track</li>   
+
+    <li><a href="GPwillcall.htm">
+	  <div id="icontickets" class="icondefaults"></div>
+	  <h1>Will Call (Tickets)</h1>
+      <br>
+      </a></li>
+    <li><a href="GPprohibited_items.htm">
+	  <div id="iconband" class="icondefaults"></div> 
+      <h1>Prohibited Items</h1>
+      <br>
+    </a></li>
+    <li><a href="GPentrygate.htm">
+	  <div id="iconentry" class="icondefaults"></div>
+	  <h1>Entry Gate Hours and Locations</h1>
+      <br>
+      </a></li>
+    <li><a href="GPtrackcross.htm">  
+	  <div id="iconcrossing" class="icondefault2"></div> 
+      <h1>Entry Gate Track Crossing Times</h1>
+      <br>
+      </a></li> 
+     <li><a href="GPschedule.htm">
+	  <div id="iconschedule" class="icondefaults"></div> 
+      <h1>Race Schedule</h1>
+      <br>
+      </a></li> 
+     <li><a href="GPmaps.htm">
+	  <div id="iconmaps" class="icondefaults"></div>
+      <h1>Maps</h1>
+      <br>
+      </a></li> 
+    <li><a href="GPspotterguide.htm">
+	  <div id="iconspot" class="icondefaults"></div>
+      <h1>Race Car Spotting Guide</h1>
+      <br>
+      </a></li> 
+    <li><a href="GPphotos.htm">
+	  <div id="iconcamera" class="icondefault2"></div> 
+      <h1>Photo Stream</h1>
+      <br>
+      </a></li> 
+     <li><a href="GPmerch.htm">
+	  <div id="iconfoodmerch" class="icondefault2"></div> 
+      <h1>Food, Beverage & Merchandise</h1>
+      <br>
+      </a></li> 
+
+<li data-role="list-divider">Help</li>
+     <li><a href="GPfaq.htm">
+	  <div id="iconqs" class="icondefaults"></div> 
+      <h1>FAQs - Frequently Asked Questions</h1>
+      <br>
+      </a></li> 
+     <li><a href="GPcustomerserv.htm">
+	  <div id="iconcust" class="icondefaults"></div>
+      <h1>Help & Customer Service</h1>
+      <br>
+      </a></li> 
+      <li><a href="GPlostfound.htm">
+	  <div id="iconaid" class="icondefaults"></div>
+      <h1>Lost & Found - First Aid</h1>
+      <br>
+    </a></li>           
+ 
+<li data-role="list-divider">More Online</li>
+     <li><a href="http://racecontrol.indycar.com/?type=true&u=&r=" data-ajax="false">
+      <h1>Indy Timing and Scoring (html)</h1>
+      <br>
+      </a></li> 
+     <li><a href="http://livetiming.net/imsa/usf2000/html.asp" data-ajax="false">
+      <h1>USF 2000 Timing and Scoring (html)</h1>
+      <br>
+      </a></li> 
+      <li><a href="http://www.starmazda.com/timing/" data-ajax="false">
+      <h1>Star Mazda Timing and Scoring (flash or app)</h1>
+      <br>
+      </a></li>           
+      <li><a href="http://www.world-challengetv.com/" data-ajax="false">
+      <h1>Pirelli World Challenge (Live Stream of Race)</h1>
+      <br>
+      </a></li> 
+     <li><a href="http://m.indycar.com/" data-ajax="false">
+      <h1>m.Indycar.com</h1>
+      <br>
+      </a></li> 
+      <li><a href="http://gpstpete.com/" data-ajax="false">
+      <h1>GPStPete.com</h1>
+      <br>
+      </a></li>                
+
+
+  </ul>
+</div>
+<!-- \/\/\/\/\/\/\/\/\/ END Page Content \/\/\/\/\/\/\/\/\/ -->
+
+
+<!--footer - changes are rare -->
+  <div id="footer" data-role="footer" data-theme="d">
+    <div data-role="navbar">
+      <ul>
+        <li><a href="index.htm" data-ajax="false">Home</a></li>
+        <li><a href="events.htm" data-ajax="false">Events</a></li>
+        <li><a href="news.htm" data-ajax="false">News</a></li>
+        <li><a href="contact.htm" data-prefetch>Contact</a></li>
+        <li><a href="#" data-ajax="false" onClick="document.cookie='nomobileplease=true;path=/'; window.location = 'http://www.stpete.org/index.asp?LeftMobileSite';">Full Site</a></li>
+      </ul>
+      <p id="copyright">Copyright 2013, All Rights Reserved</p>
+    </div>
+    <!-- /navbar -->
+  </div>
+<!--/footer-->
+
+
+</div>
+<!-- /page -->
+
+
+<!-- ?? tracking info - no changes -->
+<script type="text/javascript">$('[data-role=page]').live('pageshow',function(event,ui){try{_gaq.push(['_setAccount','UA-8738346-1']);hash=location.hash;if(hash){_gaq.push(['_trackPageview',hash.substr(1)])}else{_gaq.push(['_trackPageview'])}}catch(err){}});</script>
+
+</body>
+</html>

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link href="css/mstpete.css" rel="stylesheet" type="text/css" />
+    <link href="css/jquery.mobile.structure-1.1.0.min.css" rel="stylesheet" type="text/css" />
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.mobile-1.1.0.min.js"></script>
+    <link rel="apple-touch-icon" href="image/Surprising-St_icon.png" />
+
+<!-- Unique to this page --> 
+<script type="text/javascript">
+/**
+ *  Plugin which renders the YouTube channel videos list to the page
+ *  @author:  H. Yankov (hristo.yankov at gmail dot com)
+ *  @version: 1.0.0 (Nov/27/2009)
+ *    http://yankov.us *   *  Modified my Dan Hounshell (Jan/2010) to work for favorites or  *  uploads feeds and simplified output 
+ */
+
+ var __mainDiv;
+ var __preLoaderHTML;
+ var __opts;
+
+ function __jQueryYouTubeChannelReceiveData(data) {
+
+     var cnt = 0;
+
+     $.each(data.feed.entry, function(i, e) {
+         if (cnt < __opts.numberToDisplay) {
+             var parts = e.id.$t.split('/');
+             var videoId = parts[parts.length-1];
+             var out = '<div class="video"><a href="' + e.link[0].href + '"><img alt="" src="http://i.ytimg.com/vi/' + videoId + '/2.jpg"/></a><br /><a href="' + e.link[0].href + '">' + e.title.$t + '</a><p>';
+             if (!__opts.hideAuthor) {
+                 out = out + 'Author: ' + e.author[0].name.$t + '';
+             }
+             out = out + '</p></div>';
+             __mainDiv.append(out);
+             cnt = cnt + 1;
+         }
+     });
+            
+    // Open in new tab?
+    if (__opts.linksInNewWindow) {
+        $(__mainDiv).find("li > a").attr("target", "_blank");
+    }
+    
+    // Remove the preloader and show the content
+    $(__preLoaderHTML).remove();
+    __mainDiv.show();
+}
+                
+(function($) {
+    $.fn.youTubeChannel = function(options) {
+        var videoDiv = $(this);
+
+        $.fn.youTubeChannel.defaults = {
+            userName: null,
+            channel: "favorites", //options are favorites or uploads
+            loadingText: "Loading...",
+            numberToDisplay: 3,
+            linksInNewWindow: true,
+            hideAuthor: false 
+        };
+
+        __opts = $.extend({}, $.fn.youTubeChannel.defaults, options);
+
+        return this.each(function() {
+            if (__opts.userName != null) {
+                videoDiv.append("<div id=\"channel_div\"></div>");
+                __mainDiv = $("#channel_div");
+                __mainDiv.hide();
+
+                __preLoaderHTML = $("<p class=\"loader\">" + __opts.loadingText + "</p>");
+                videoDiv.append(__preLoaderHTML);
+
+                // TODO: Error handling!
+                $.ajax({
+                    url: "http://gdata.youtube.com/feeds/base/users/" + __opts.userName + "/" + __opts.channel + "?alt=json",
+                    cache: true,
+                    dataType: 'jsonp',                    
+                    success: __jQueryYouTubeChannelReceiveData
+                });
+            }
+        });
+    };
+})(jQuery);
+
+
+  $(document).ready(function()
+  {
+
+        $('#youtubevideos').youTubeChannel({
+		            userName: 'stpeteTV',
+					channel: "uploads",
+					hideAuthor: true,
+					numberToDisplay: 12,
+					linksInNewWindow: true
+					//other options
+					//loadingText: "Loading...",
+					 });
+
+	});
+</script>
+
+<style type="text/css">
+#youtubevideos{
+	float:left;
+}
+.video {
+	display:inline-block;
+	float:left;
+	padding:10px 0px 10px 0px;
+	margin:0px 10px 0px 10px;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	width:120px;
+}
+
+</style> <!--END Unique HTML of page-->
+
+<!-- /Unique to this page -->
+
+<title>On YouTube</title>
+
+</head>
+
+<body>
+<!-- =-=-=-=-=-== Page 1 =-=-=-=-==-=-= -->
+<div data-role="page" id="pg1">
+<div id="header" data-role="header" data-theme="b">
+    <div id="banner">
+            <span id="logo"><a href="http://www.stpete.org/mobile/"><img src="images/logo.png" alt="Logo" /></a></span>
+    </div><!-- /banner -->                                                   
+
+<div id="crumbs">
+	<a href="http://www.stpete.org/mobile/" data-ajax="false" data-role="button" data-icon="home" data-theme="d">Home</a>
+    <a href="http://www.stpete.org/mobile/youtube.htm" data-ajax="false" data-role="button" data-icon="back" data-theme="d">YouTube</a>
+</div><!-- /crumbs -->
+
+<div data-role="navbar">
+	<ul>
+		<!--<li><a href="#pg1" class="ui-btn-active">Attractions</a></li>-->
+	</ul>
+</div><!-- /navbar -->
+</div><!--/header-->
+
+
+<div data-role="content" >
+
+ <h1>On YouTube</h1>   
+ 
+ <p>StPeteTV is on YouTube.com for convenient access on all of your entertainment devices. See the lighter side of your city government by watching our educational and informative videos.</p><p> Keep up to date with our weekly <strong>St Pete Extra!</strong> series which highlights new developments from grand openings for local business to  celebrity interviews and upcoming events. </p>
+ <!-- YouTube Promotion Area -->
+<a href="http://www.youtube.com/stpeteTV" target="_blank"><img src="http://www.stpete.org/stpeteTV/images/YoutTube_sub_Button.png" style="" class="noformat" alt="YouTubecom" /></a><br><br>
+
+Newly added to our channel...
+<div id="youtubevideos" style="clear:both;"></div>
+<!-- end YouTube -->
+ 
+ 
+</div><!-- end data role content -->
+
+<!--footer-->
+<div id="footer" data-role="footer" data-theme="d">
+    <div data-role="navbar">
+        <ul>
+            <li><a href="index.htm" data-ajax="false">Home</a></li>
+            <li><a href="events.htm" data-ajax="false">Events</a></li>
+            <li><a href="news.htm" data-ajax="false">News</a></li>
+            <li><a href="contact.htm" data-prefetch>Contact</a></li>
+            <li><a href="#" data-ajax="false" onClick="document.cookie='nomobileplease=true;path=/'; window.location = 'http://www.stpete.org/index.asp?LeftMobileSite';">Full Site</a></li>
+        </ul>
+        <p id="copyright">Copyright 2012, All Rights Reserved</p>
+    
+    </div><!-- /navbar -->
+</div><!--/footer-->
+
+</div><!-- end page1 -->
+
+<script type="text/javascript">$('[data-role=page]').live('pageshow',function(event,ui){try{_gaq.push(['_setAccount','UA-8738346-1']);hash=location.hash;if(hash){_gaq.push(['_trackPageview',hash.substr(1)])}else{_gaq.push(['_trackPageview'])}}catch(err){}});</script>
+</body>
+</html>

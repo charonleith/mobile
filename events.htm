@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link href="css/mstpete.css" rel="stylesheet" type="text/css" />
+    <link href="css/jquery.mobile.structure-1.1.0.min.css" rel="stylesheet" type="text/css" />
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.mobile-1.1.0.min.js"></script>
+    <link rel="apple-touch-icon" href="image/Surprising-St_icon.png" />
+
+<!-- Unique to this page --> 
+<script src="js/jqueryRSS.js"></script>
+<script src="https://www.google.com/jsapi?key=ABQIAAAA3HxOQOL8rcl8b5IEkcw6FxSNyhnIJUuFeZdyc1CS7kFoPfuIoBTBalePKIZjxQYelAngbvvnNE7qPw" ></script>
+
+<script type="text/javascript">
+$(document).ready(function () {
+  $('#test').rssfeed('http://www.stpete.org/rss_events.xml', {
+    limit: 15,
+	sortasc: false,
+	date: false
+  });
+});
+</script>
+<!-- /Unique to this page -->
+
+    <title>Mobile St Pete</title>
+</head>
+
+<body>
+
+<div data-role="page">
+
+<!-- header -->
+<div id="header" data-role="header" data-theme="b">
+    <div id="banner">
+            <span id="logo"><a href="http://www.stpete.org/mobile/"><img src="images/logo.png" alt="Logo" /></a></span>
+    </div>                                                   
+    <div data-role="navbar">
+        <ul>
+            <li><a href="index.htm" data-ajax="false">Home</a></li>
+            <li><a href="events.htm" class="ui-btn-active" data-ajax="false">Events</a></li>
+            <li><a href="news.htm" data-ajax="false">News</a></li>
+            <li><a href="contact.htm" data-prefetch data-ajax="false">Contact</a></li>
+        </ul>
+    </div><!-- /navbar -->
+</div><!--/header-->
+
+<!-- \/\/\/\/\/\/\/\/\/ Page Content \/\/\/\/\/\/\/\/\/ -->
+<div data-role="content" >
+<span id="palm"></span>
+<h2>Get Downtown</h2>
+
+<!--Grab news feed from website-->
+<div id="test">Loading ...</div>
+<h4>All Events</h4>
+<iframe style="border-width: 0px;" src="http://www.google.com/calendar/embed?showTitle=0&amp;showNav=0&amp;mode=AGENDA&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=stpeteevents%40gmail.com&amp;color=%235229A3&amp;src=b31lb6ls170h4vs5s3i3kjvl38%40group.calendar.google.com&amp;color=%23A32929&amp;src=7vnqkpuoa3d6j2jcos56a0u5uo%40group.calendar.google.com&amp;color=%231B887A&amp;src=s5o3fi0rbt75g00jq7u4k0lrsk%40group.calendar.google.com&amp;color=%23BE6D00&amp;src=cdm5jfgqvu5m1hqe2234oaakpk%40group.calendar.google.com&amp;color=%230D7813&amp;src=i1pk3aumuq6p5kn5u2dpqhndc4%40group.calendar.google.com&amp;color=%237A367A&amp;src=2sqtncjq1mtk3upu5qstd7cpl8%40group.calendar.google.com&amp;color=%2329527A&amp;src=qcugg24kt53iue2uc4aa8rbbfk%40group.calendar.google.com&amp;color=%23B1365F&amp;src=bclpsnjn2pmifu58sglm6se7jo%40group.calendar.google.com&amp;color=%232952A3&amp;ctz=America%2FNew_York" frameborder="0" scrolling="no" height="400" width="100%"></iframe>
+
+</div>
+<!-- \/\/\/\/\/\/\/\/\/ END Page Content \/\/\/\/\/\/\/\/\/ -->
+
+<!--footer-->
+<div id="footer" data-role="footer" data-theme="d">
+    <div data-role="navbar">
+        <ul>
+            <li><a href="index.htm" data-prefetch>Home</a></li>
+            <li><a href="events.htm" data-ajax="false">Events</a></li>
+            <li><a href="news.htm" data-ajax="false">News</a></li>
+            <li><a href="contact.htm" data-prefetch>Contact</a></li>
+            <li><a href="#" data-ajax="false" onClick="document.cookie='nomobileplease=true;path=/'; window.location = 'http://www.stpete.org/index.asp?LeftMobileSite';">Full Site</a></li>
+        </ul>
+        <p id="copyright">Copyright 2012, All Rights Reserved</p>
+    
+    </div><!-- /navbar -->
+</div><!--/footer-->
+
+</div><!-- /page -->
+
+<script type="text/javascript">$('[data-role=page]').live('pageshow',function(event,ui){try{_gaq.push(['_setAccount','UA-8738346-1']);hash=location.hash;if(hash){_gaq.push(['_trackPageview',hash.substr(1)])}else{_gaq.push(['_trackPageview'])}}catch(err){}});</script>
+</body>
+</html>

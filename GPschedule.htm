@@ -5,7 +5,7 @@
 <!--   Unique to this page                  -->
 <!--   Countdown Code  move elsewhere		-->
 <!--   Header w/ banner and crumbs 			-->
-<!--   Content 								-->
+<!--   Content 	--Race Info--   			-->
 <!--   Standard Footer 						-->
 <!--   Standard Tracking 					-->
 
@@ -903,7 +903,7 @@ var plugin = $.countdown = new Countdown(); // Singleton instance
 					// Convert Unix date (seconds) to milliseconds for Javascript
 					var javaDate = new Date(unix_date * 1000);				
 					// Activate countdown timer on the DOM object
-					$(this).countdown({until: javaDate, format: 'dhms',alwaysExpire:true, onExpiry:hide});
+					$(this).countdown({until: javaDate, format: 'hm',alwaysExpire:true, onExpiry:hide});
 					});
 	function hide(){
 	$(this).hide();
@@ -922,16 +922,18 @@ var plugin = $.countdown = new Countdown(); // Singleton instance
 <div data-role="page" id="pg1">
   <div id="header" data-role="header" data-theme="b">
   
-<!-- banner -->  
-    <div id="banner"> <span id="logo"><a href="http://www.stpete.org/mobile/"><img src="images/GPheader.png" alt="Grand Prix Logo" /></a></span> 
-    </div>
-<!--/banner -->
-
+<!-- banner -->
+  <div id="banner"> 
+      <span id="logo">
+          <a href="http://www.stpete.org/mobile/">              <img src="images/gp_header_car.png" alt="Home"/>
+<img src="images/gp_header_text.png" alt="Grand Prix" style="float:right; position:absolute;right:1px; top:30px;" />
+            </a>
+       </span> 
+  </div>
+<!-- /banner -->
 <!-- crumbs -->
     <div id="crumbs"> 
     <a href="GPList.htm" data-ajax="false" data-role="button" data-icon="home" data-theme="d">MobileGP Home</a> 
-    <a href="GPschedule.htm" data-ajax="false" data-role="button" data-icon="back" data-theme="d">
-		Schedule</a> 
     </div>
 <!-- /crumbs -->
 
@@ -940,9 +942,11 @@ var plugin = $.countdown = new Countdown(); // Singleton instance
 
 
 <!-- \/\/\/\/\/\/\/\/\/ Page Content \/\/\/\/\/\/\/\/\/ -->
+<!-- good place to get the epoch timestamps for the CountDownTo parms : http://www.epochconverter.com/ -->
+
   <div data-role="content" >
-    <h1>Race Schedule 2013  TEST</h1>
-	
+    <h1>Race Schedule</h1>
+ 	
     <p><strong>Friday, March 22</strong></p>
     <table width="100%" border="0" cellspacing="8">
       <tbody>
@@ -952,25 +956,75 @@ var plugin = $.countdown = new Countdown(); // Singleton instance
           <th bgcolor="#CCCCCC">Event Name</th>
         </tr>
 		<tr>
-			<td width="25%"><div class="CountDownTo 1363957200"></div></td>
-			<td width="25%"><div align="center">8:00-8:20</div></td>
-			<td width="50%"><strong>Ferrari Sponsor Hot Laps</strong></td>
+			<td width="25%"><div class="CountDownTo 1363953600"></div></td>
+			<td width="25%"><div align="center">8:00-8:30</div></td>
+			<td width="50%"><strong>USF2000 Practice</strong></td>
 		</tr>
 		<tr>
-			<td width="25%"><div class="CountDownTo 1363959300"></div></td>
+			<td width="25%"><div class="CountDownTo 1363955700"></div></td>
 			<td width="25%"><div align="center">8:35-9:05</div></td>
-			<td width="50%"><strong>IZOD IndyCar Warm-up</strong></td>
+			<td width="50%"><strong>Pro Mazda Practice</strong></td>
 		</tr>
 		<tr>
-			<td width="25%"><div class="CountDownTo 1357236732"></div></td>
-			<td width="25%"><div align="center">9:15-9:55</div></td>
-			<td width="50%"><strong>test past time 1/3/13 12:12 should hide</strong></td>
+			<td width="25%"><div class="CountDownTo 1363958400"></div></td>
+			<td width="25%"><div align="center">9:20 - 9:50</div></td>
+			<td width="50%"><strong>PWC Practice</strong></td>
 		</tr>
 		<tr>
-			<td width="25%"><div class="CountDownTo <?php echo time()+20; ?>"></div></td>
-			<td width="25%"><div align="center">10:05-10:45</div></td>
-			<td width="50%"><strong>test php 20sec</strong></td>
-		</tr>			
+			<td width="25%"><div class="CountDownTo 1363961100"></div></td>
+			<td width="25%"><div align="center">10:05 - 10:50</div></td>
+			<td width="50%"><strong>Firestone Indy Lights Practice</strong></td>
+		</tr>
+		<tr>
+			<td width="25%"><div class="CountDownTo 1363964700"></div></td>
+			<td width="25%"><div align="center">11:05 - 11:50</div></td>
+			<td width="50%"><strong>IZOD IndyCar Practice</strong></td>
+		</tr>
+		<tr>
+			<td width="25%"><div class="CountDownTo 1363968300"></div></td>
+			<td width="25%"><div align="center">12:05-12:45</div></td>
+			<td width="50%"><strong>Vintage & Historic Series</strong></td>
+		</tr>
+		<tr>
+			<td width="25%"><div class="CountDownTo 1363971600"></div></td>
+			<td width="25%"><div align="center">1:00 - 1:30</div></td>
+			<td width="50%"><strong>PWC Practice</strong></td>
+		</tr>
+		<tr>
+			<td width="25%"><div class="CountDownTo 1363974300"></div></td>
+			<td width="25%"><div align="center">1:45 - 2:30</div></td>
+			<td width="50%"><strong>Firestone Indy Lights Practice</strong></td>
+		</tr>
+		<tr>
+			<td width="25%"><div class="CountDownTo 1363977900"></div></td>
+			<td width="25%"><div align="center">2:45 - 3:30</div></td>
+			<td width="50%"><strong>IZOD IndyCar Practice</strong></td>
+		</tr>
+		<tr>
+			<td width="25%"><div class="CountDownTo 1363981500"></div></td>
+			<td width="25%"><div align="center">3:45 -4:15</div></td>
+			<td width="50%"><strong>USF2000 Practice</strong></td>
+		</tr>
+		<tr>
+			<td width="25%"><div class="CountDownTo 1363983600"></div></td>
+			<td width="25%"><div align="center">4:20-4:50</div></td>
+			<td width="50%"><strong>Pro Mazda Practice</strong></td>
+		</tr>
+		<tr>
+			<td width="25%"><div class="CountDownTo 1363986300"></div></td>
+			<td width="25%"><div align="center">5:05 - 5:50</div></td>
+			<td width="50%"><strong>PWC Qualifying</strong></td>
+		</tr>
+		<tr>
+			<td width="25%"><div class="CountDownTo 1363990500"></div></td>
+			<td width="25%"><div align="center">6:15</div></td>
+			<td width="50%"><strong>5K Run</strong></td>
+		</tr>
+		<tr>
+			<td width="25%"><div class="CountDownTo 1363993200"></div></td>
+			<td width="25%"><div align="center">7:00</div></td>
+			<td width="50%"><strong>Welcome Party</strong></td>
+		</tr>
       </tbody>
     </table>
 	
@@ -983,21 +1037,54 @@ var plugin = $.countdown = new Countdown(); // Singleton instance
           <th bgcolor="#CCCCCC">Event Name</th>
         </tr>
 		<tr>
-			<td width="25%"><div class="CountDownTo 1364043600"></div></td>
-			<td width="25%"><div align="center">8:00-10:00</div></td>
-			<td width="50%"><strong>Test Race #A</strong></td>
+			<td width="25%"><div class="CountDownTo 1364040000"></div></td>
+			<td width="25%"><div align="center">8:00-8:30</div></td>
+			<td width="50%"><strong>USF2000 Qualifying</strong></td>
 		</tr>
 		<tr>
-			<td width="25%"><div class="CountDownTo 1364045700"></div></td>
+			<td width="25%"><div class="CountDownTo 1364042100"></div></td>
 			<td width="25%"><div align="center">8:35-9:05</div></td>
-			<td width="50%"><strong>Test Race #B</strong></td>
+			<td width="50%"><strong>Pro Mazda Qualifying</strong></td>
 		</tr>
 		<tr>
-			<td width="25%"><div class="CountDownTo 1364070600"></div></td>
-			<td width="25%"><div align="center">3:30-4:30</div></td>
-			<td width="50%"><strong>Autographs in Fan Village</strong>
-				<span style="font-size:.8em;">Rahal, Kimball, Wilson, Jakes, Andretti, Hunter-Reay, Hinchclie,Legge, Bourdais, Servia, Tagliani, Newgarden, Sato, Conway</span>
-			</td>
+			<td width="25%"><div class="CountDownTo 1364044800"></div></td>
+			<td width="25%"><div align="center">9:20 - 10:05</div></td>
+			<td width="50%"><strong>Firestone Indy Lights Qualifying</strong></td>
+		</tr>
+				<tr>
+			<td width="25%"><div class="CountDownTo 1364048400"></div></td>
+			<td width="25%"><div align="center">10:20 - 11:05</div></td>
+			<td width="50%"><strong>IZOD IndyCar Practice</strong></td>
+		</tr>
+		<tr>
+			<td width="25%"><div class="CountDownTo 1364052000"></div></td>
+			<td width="25%"><div align="center">11:20-12:00</div></td>
+			<td width="50%"><strong>Vintage & Historic Series</strong></td>
+		</tr>
+		<tr>
+			<td width="25%"><div class="CountDownTo 1364055300"></div></td>
+			<td width="25%"><div align="center">12:15-12:55</div></td>
+			<td width="50%"><strong>USF2000 Race #1</strong></td>
+		</tr>
+				<tr>
+			<td width="25%"><div class="CountDownTo 1364058600"></div></td>
+			<td width="25%"><div align="center">1:10-1:50</div></td>
+			<td width="50%"><strong>Pro Mazda Race #1</strong></td>
+		</tr>
+		<tr>
+			<td width="25%"><div class="CountDownTo 1364061900"></div></td>
+			<td width="25%"><div align="center">2:05 - 3:15</div></td>
+			<td width="50%"><strong>IZOD IndyCar Qualifying & Firestone Fast 6</strong></td>
+		</tr>
+		<tr>
+			<td width="25%"><div class="CountDownTo 1364067600"></div></td>
+			<td width="25%"><div align="center">3:40 - 4:40</div></td>
+			<td width="50%"><strong>Firestone Indy Lights Race</strong> 45 Laps</td>
+		</tr>
+		<tr>
+			<td width="25%"><div class="CountDownTo 1364072400"></div></td>
+			<td width="25%"><div align="center">5:00 - 6:00</div></td>
+			<td width="50%"><strong>PWC Race #1</strong></td>
 		</tr>
       </tbody>
     </table>
@@ -1011,20 +1098,41 @@ var plugin = $.countdown = new Countdown(); // Singleton instance
           <th bgcolor="#CCCCCC">Event Name</th>
         </tr>
 		<tr>
+			<td width="25%"><div class="CountDownTo 1364130000"></div></td>
+			<td width="25%"><div align="center">9:00 - 9:30</div></td>
+			<td width="50%"><strong>IZOD IndyCar Warm-up</strong></td>
+		</tr>
+		<tr>
 			<td width="25%"><div class="CountDownTo 1364133600"></div></td>
-			<td width="25%"><div align="center">9:00-10:00</div></td>
-			<td width="50%"><strong>Test Race #1</strong></td>
+			<td width="25%"><div align="center">10:00 - 11:00</div></td>
+			<td width="50%"><strong>PWC Race #2</strong></td>
 		</tr>
 		<tr>
-			<td width="25%"><div class="CountDownTo 1364140800"></div></td>
-			<td width="25%"><div align="center">11:00-12:00</div></td>
-			<td width="50%"><strong>Test Race #2 with a really long name</strong></td>
+			<td width="25%"><div class="CountDownTo 1364139000"></div></td>
+			<td width="25%"><div align="center">11:30 - 12:30</div></td>
+			<td width="50%"><strong>IZOD IndyCar Pre-Race</strong></td>
 		</tr>
 		<tr>
-			<td width="25%"><div class="CountDownTo 1364146200"></div></td>
-			<td width="25%"><div align="center">12:30-3:00</div></td>
-			<td width="50%"><strong>Test Race #3</strong></td>
+			<td width="25%"><div class="CountDownTo 1364142600"></div></td>
+			<td width="25%"><div align="center">12:30 - 2:30</div></td>
+			<td width="50%"><strong>IZOD IndyCar Race</strong> 100 Laps</td>
 		</tr>
+		<tr>
+			<td width="25%"><div class="CountDownTo 1364151600"></div></td>
+			<td width="25%"><div align="center">3:00-3:40</div></td>
+			<td width="50%"><strong>Pro Mazda Race #2</strong></td>
+		</tr>
+		<tr>
+			<td width="25%"><div class="CountDownTo 1364154900"></div></td>
+			<td width="25%"><div align="center">3:55-4:35</div></td>
+			<td width="50%"><strong>USF2000 Race #2</strong></td>
+		</tr>
+		<tr>
+			<td width="25%"><div class="CountDownTo 1364158200"></div></td>
+			<td width="25%"><div align="center">4:50-5:30</div></td>
+			<td width="50%"><strong>Vintage & Historic Series</strong></td>
+		</tr>
+	
       </tbody>
     </table>
 	
